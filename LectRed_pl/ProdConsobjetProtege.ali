@@ -1,0 +1,108 @@
+V "GNAT Lib v4.6"
+M P W=b
+P SS ZX
+R vnnnnnnnnnnnnnnnnnvnnvnnnvvvvnnvnvvnvnnnnnnnvnnnnvnvnnnnnnvnnnnnnnnv2nnnnnv1+nnnv1+nn
+
+U prodconsobjetprotege%b  ProdConsobjetProtege.adb  f6879e9b NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+W system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W text_io%s		text_io.ads		text_io.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-reatim.ads		20090409150019 63f07669
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20101021101406 c7695348
+D a-textio.ads		20091028140912 386df5d4
+D a-tiinau.ads		20090409150019 8114c8e4
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-tiinio.adb		20091130162119 df9cd7af
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-c.ads		20101007125900 809c38c4
+D i-cstrea.ads		20100622165701 1bd72c32
+D ProdConsobjetProtege.adb  20121214113129 b351b852
+D system.ads		20140416172229 23e1f70b
+D s-atacco.ads		20090409150019 1dc856ad
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20100909103250 443b9d66
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-linux.ads		20090730092306 47911ab1
+D s-multip.ads		20101011073009 38ac9f73
+D s-osinte.ads		20101127183452 6e2d2e09
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stausa.ads		20101018101807 bba781f7
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-tasinf.ads		20090409150019 21316953
+D s-taspri.ads		20080408071349 af44aca8
+D s-taprop.ads		20090409150019 07f79e46
+D s-taskin.ads		20101021101406 b2eaee08
+D s-taprob.ads		20090409150019 502249e3
+D s-tpoben.ads		20090409150019 e8374469
+D s-tpobop.ads		20090409150019 5f548bb3
+D s-tassta.ads		20101018103456 e88ef99e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+D text_io.ads		20070406091342 45d626c9
+X 9 a-textio.ads
+264U14*Put_Line 17|41s1 50s1
+X 11 a-tiinio.ads
+45k21*Integer_IO 84e27 17|8r23
+X 17 ProdConsobjetProtege.adb
+6U11*ProdConsObjetProtege 6b11 77l5 77t25
+8K9 int_io[11|45] 9r5
+11i1 n{integer} 12r31 23r31 37r13 40r24 49r26
+12A6 Tampon_Type(integer)<integer> 22r10
+16W16 Magasinier 24l5 24e15 26r5 35b16 54l5 54t15
+17Y7 produire 17>16 36b7 43l5 43t13 60s3
+17i16 Mess{integer} 39r17
+18Y7 consommer 18<17 45b7 52l5 52t14 69s3
+18i17 Mess{integer} 48r1
+20i1 cpt{integer} 37r7 42r1 42r8 46r7 51r1 51r8
+22a1 tampon{12A6} 39r1 48r9
+23i1 tete{integer} 39r8 40r1 40r10
+23i6 queue{integer} 48r16 49r1 49r11
+26w1 M{16W16} 60r1 69r1
+29T11 Producteur 29l29 29e39 56b11 62l5 62t15 73r5
+32T11 Consommateur 32l31 32e43 65b11 71l5 71t17 74r5
+36i16 Mess{integer}
+45i17 Mess{integer}
+57i1 value{integer} 60r12
+59i5 i{integer}
+66i1 value{integer} 69m13
+68i5 i{integer}
+73t1 P{29T11}
+74t1 C{32T11}
+X 48 text_io.ads
+24K9*Text_IO=24:29 17|2w6 2r19
+
