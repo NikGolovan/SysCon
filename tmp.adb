@@ -1,5 +1,7 @@
+WITH TEXT_IO; use TEXT_IO;
+
 procedure Giratoire is 
-package int_io new Integer_io(integer);
+package int_io is new Integer_io(integer);
 use int_io;
 nb_voie : Integer := 4;
 subtype type_voie is Integer range 0..nb_voie-1;
@@ -12,7 +14,7 @@ protected type Carrefour is
   private 
     voie_courante : Integer := -1;
     nb_voiture_in : Integer := 0;
-    nv_voiture_possible : Integer := 20;
+    nb_voiture_possible : Integer := 20;
     voie : type_voie;
 end Carrefour;
 
@@ -24,7 +26,7 @@ C : Carrefour;
 -- corps du Carrefour
 protected body Carrefour is 
   entry Entrer(for voie in type_voie)
-    when ((voie_courante = -1) or ((voie_courante = voie) and (nb_voiture_in < nb_voiture_possible)) is 
+    when ((voie_courante = -1) or ((voie_courante = voie) and (nb_voiture_in < nb_voiture_possible))) is 
     begin
       nb_voiture_in := nb_voiture_in + 1;
       voie_courante := voie;
@@ -33,13 +35,13 @@ protected body Carrefour is
 
 -- corps de la procédure Sortir
   procedure Sortir is 
-    occupe := boolean := False;
+    occupe : boolean := False;
     voie_regarde : Integer := voie_courante;
     compteur : Integer := 0;
     begin
       voie_courante := -1;
       while((occupe = False) and (compteur < nb_voie)) loop
-        if(Entrer(voie_regarde mod nb_voie)`count /= 0) then
+        if(Entrer(voie_regarde mod nb_voie)'count /= 0) then
           voie_courante := (voie_regarde + nb_voie) mod nb_voie;
           put("La voie est occupee : ");
           put(voie_courante); 
