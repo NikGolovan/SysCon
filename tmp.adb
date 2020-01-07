@@ -48,8 +48,12 @@ protected body Carrefour is
           new_line;
           occupe := True;
         else
+          put("La voiture rentre sur la voie : ");
+          put(voie_regarde); 
+          new_line;
           compteur := compteur + 1;
           voie_regarde := voie_regarde + 1 mod nb_voie;
+          voie_courante := voie_courante + 1;
         end if;
       end loop;
       nb_voiture_in := nb_voiture_in - 1;
